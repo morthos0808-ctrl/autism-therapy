@@ -1,4 +1,4 @@
-:root {
+              :root {
   --paper: #fffcf6;
   --cream: #f8f1e4;
   --beige: #f8f1e4;
@@ -192,6 +192,100 @@ button {
 
 .start-btn:active {
   background: var(--green-active);
+}
+
+.screen--menu {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+}
+
+.menu-header {
+  display: flex;
+  padding: 14px 18px 0;
+}
+
+.menu-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 4vh, 36px);
+  width: 100%;
+  padding: 12px 24px 8vh;
+}
+
+.menu-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(20px, 2.6vw, 26px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: min(100%, 460px);
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 20px 22px;
+  border: 1px solid var(--green-line);
+  border-radius: 22px;
+  background: var(--green-soft);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.menu-card:hover {
+  background: #e7e9d3;
+}
+
+.menu-card:active {
+  transform: scale(0.99);
+}
+
+.menu-card-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: var(--green);
+  color: var(--ink-soft);
+}
+
+.menu-card-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.menu-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-card-title {
+  font-size: clamp(20px, 2.6vw, 24px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.menu-card-desc {
+  color: var(--ink-soft);
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 500;
 }
 
 .screen--practice {

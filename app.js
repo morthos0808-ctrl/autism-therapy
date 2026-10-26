@@ -62,8 +62,11 @@
 
   const els = {
     startScreen: document.getElementById("screen-start"),
+    menuScreen: document.getElementById("screen-menu"),
     practiceScreen: document.getElementById("screen-practice"),
     startBtn: document.getElementById("start-btn"),
+    menuBackBtn: document.getElementById("menu-back-btn"),
+    practiceEntryBtn: document.getElementById("practice-entry-btn"),
     settingsBtn: document.getElementById("settings-btn"),
     overlay: document.getElementById("settings-overlay"),
     dialog: document.getElementById("settings-dialog"),
@@ -187,10 +190,15 @@
   }
 
   function showScreen(name) {
-    const isStart = name === "start";
-    els.startScreen.hidden = !isStart;
-    els.practiceScreen.hidden = isStart;
+    els.startScreen.hidden = name !== "start";
+    els.menuScreen.hidden = name !== "menu";
+    els.practiceScreen.hidden = name !== "practice";
     window.scrollTo(0, 0);
+  }
+
+  function openMenu() {
+    showScreen("menu");
+    els.practiceEntryBtn.focus({ preventScroll: true });
   }
 
   function startSession() {
@@ -216,6 +224,7 @@
     lastFocused = document.activeElement;
     els.overlay.hidden = false;
     els.startScreen.inert = true;
+    els.menuScreen.inert = true;
     els.practiceScreen.inert = true;
     els.settingsBtn.setAttribute("aria-expanded", "true");
     els.closeSettingsBtn.focus({ preventScroll: true });
@@ -229,6 +238,7 @@
 
     els.overlay.hidden = true;
     els.startScreen.inert = false;
+    els.menuScreen.inert = false;
     els.practiceScreen.inert = false;
     els.settingsBtn.setAttribute("aria-expanded", "false");
     document.removeEventListener("keydown", handleDialogKeydown);
@@ -287,7 +297,9 @@
     els.startBtn.focus({ preventScroll: true });
   }
 
-  els.startBtn.addEventListener("click", startSession);
+  els.startBtn.addEventListener("click", openMenu);
+  els.menuBackBtn.addEventListener("click", goHome);
+  els.practiceEntryBtn.addEventListener("click", startSession);
   els.settingsBtn.addEventListener("click", openSettings);
   els.closeSettingsBtn.addEventListener("click", () => closeSettings());
   els.restartBtn.addEventListener("click", restartSession);
