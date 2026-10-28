@@ -77,18 +77,16 @@
       name: "洗手台",
       colors: ["blue", "green", "yellow"],
       render: (hex) => `
-        <ellipse cx="100" cy="186" rx="34" ry="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M84 146 h32 l10 38 h-52 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <path d="M16 80 C20 122 48 152 100 152 C152 152 180 122 184 80 Z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <ellipse cx="100" cy="80" rx="84" ry="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <ellipse cx="100" cy="82" rx="64" ry="11" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2.5" />
-        <circle cx="100" cy="132" r="5" fill="${STROKE}" />
-        <rect x="60" y="50" width="80" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
-        <rect x="92" y="18" width="16" height="48" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <circle cx="100" cy="16" r="8" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
-        <rect x="88" y="60" width="24" height="8" rx="3" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
-        <circle cx="62" cy="54" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
-        <circle cx="138" cy="54" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
+        <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="4" />
+        <path d="M46 128 q13.5 -9 27 0 t27 0 t27 0 t27 0" fill="none" stroke="#DDEEF5" stroke-width="6" stroke-linecap="round" />
+        <rect x="91.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <rect x="104.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <path d="M88 54 v64 M97 54 v70 M106 54 v64" fill="none" stroke="#DDEEF5" stroke-width="6" stroke-linecap="round" />
+        <circle cx="70" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="70" cy="84" r="4.5" fill="#FFFCF6" />
+        <circle cx="130" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="130" cy="84" r="4.5" fill="#FFFCF6" />
+        <rect x="66" y="20" width="46" height="42" rx="20" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
       `,
     },
     {
@@ -142,16 +140,12 @@
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
-        <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="4" />
-        <path d="M46 128 q13.5 -9 27 0 t27 0 t27 0 t27 0" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round" />
-        <rect x="91.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
-        <rect x="104.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
-        <circle cx="70" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
-        <circle cx="70" cy="84" r="4.5" fill="#FFFCF6" />
-        <circle cx="130" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
-        <circle cx="130" cy="84" r="4.5" fill="#FFFCF6" />
-        <rect x="66" y="20" width="46" height="42" rx="20" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M78 30 v16 M88 28 v18 M98 28 v18 M108 30 v16" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="5" stroke-linecap="round" />
+        <g transform="rotate(-12 100 100)">
+          <rect x="34" y="108" width="104" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <rect x="130" y="92" width="44" height="34" rx="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <path d="M140 100 v18 M148.5 98 v20 M157 98 v20 M165.5 100 v18" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round" />
+          <path d="M48 117 h18 M72 117 h18" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
+        </g>
       `,
     },
     {
