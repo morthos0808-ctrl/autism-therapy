@@ -159,10 +159,8 @@
       id: "toothpaste",
       name: "牙膏",
       colors: ["blue", "green", "orange"],
-      render: (hex) => `
-        <rect x="88" y="44" width="24" height="16" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M78 60 h44 v84 a10 10 0 0 1 -44 0 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <path d="M78 84 h44" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="6" />
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/2779/2779344.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
@@ -204,16 +202,8 @@
       id: "tv",
       name: "电视",
       colors: ["red", "blue", "purple"],
-      render: (hex) => `
-        <path d="M100 54 L76 26 M100 54 L124 26" fill="none" stroke="${STROKE}" stroke-width="4" stroke-linecap="round" />
-        <circle cx="76" cy="26" r="4" fill="${STROKE}" />
-        <circle cx="124" cy="26" r="4" fill="${STROKE}" />
-        <rect x="36" y="54" width="128" height="86" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="46" y="64" width="108" height="56" rx="4" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
-        <circle cx="54" cy="130" r="3" fill="${STROKE}" />
-        <circle cx="66" cy="130" r="3" fill="${STROKE}" />
-        <rect x="84" y="140" width="32" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="62" y="150" width="76" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/14377/14377366.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
