@@ -90,10 +90,13 @@
       name: "水龙头",
       colors: ["red", "blue", "green"],
       render: (hex) => `
-        <path d="M72 136 V106 a28 28 0 0 1 56 0 V126" fill="none" stroke="${STROKE}" stroke-width="24" stroke-linecap="round" />
-        <path d="M72 136 V106 a28 28 0 0 1 56 0 V126" fill="none" stroke="${hex}" stroke-width="16" stroke-linecap="round" />
-        <rect x="116" y="124" width="22" height="14" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="58" y="136" width="26" height="14" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="82" y="152" width="60" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="106" y="96" width="22" height="58" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${STROKE}" stroke-width="22" stroke-linecap="round" />
+        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${hex}" stroke-width="14" stroke-linecap="round" />
+        <rect x="132" y="124" width="22" height="12" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="82" y="92" width="30" height="9" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M143 140 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
       `,
     },
     {
@@ -132,10 +135,12 @@
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
-        <rect x="88" y="70" width="18" height="86" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="80" y="46" width="34" height="30" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
-          <path d="M87 52 v14" /><path d="M95 52 v14" /><path d="M103 52 v14" /><path d="M111 52 v14" />
+        <g transform="rotate(-25 100 100)">
+          <rect x="40" y="98" width="96" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <rect x="128" y="90" width="46" height="34" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
+            <path d="M138 86 v-12" /><path d="M148 86 v-12" /><path d="M158 86 v-12" /><path d="M168 86 v-12" />
+          </g>
         </g>
       `,
     },
@@ -153,11 +158,13 @@
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
       render: (hex) => `
-        <rect x="60" y="72" width="80" height="90" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M60 96 h80" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" />
-        <path d="M60 122 h80" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" />
-        <path d="M60 148 h80" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" />
-        <path d="M80 58 h40" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+        <rect x="40" y="52" width="120" height="10" rx="5" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
+        <path d="M64 62 h72 v98 a10 10 0 0 1 -10 10 h-52 a10 10 0 0 1 -10 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M86 62 v108 M114 62 v108" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3" />
+        <g stroke="${STROKE}" stroke-width="3" stroke-linecap="round">
+          <path d="M72 170 v10" /><path d="M82 170 v10" /><path d="M92 170 v10" /><path d="M102 170 v10" />
+          <path d="M112 170 v10" /><path d="M122 170 v10" /><path d="M132 170 v10" />
+        </g>
       `,
     },
     {
@@ -210,10 +217,15 @@
       name: "电视",
       colors: ["red", "blue", "purple"],
       render: (hex) => `
-        <rect x="42" y="56" width="116" height="78" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="52" y="66" width="96" height="58" rx="5" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
-        <rect x="88" y="134" width="24" height="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="68" y="146" width="64" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M100 54 L76 26 M100 54 L124 26" fill="none" stroke="${STROKE}" stroke-width="4" stroke-linecap="round" />
+        <circle cx="76" cy="26" r="4" fill="${STROKE}" />
+        <circle cx="124" cy="26" r="4" fill="${STROKE}" />
+        <rect x="36" y="54" width="128" height="86" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="46" y="64" width="108" height="56" rx="4" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <circle cx="54" cy="130" r="3" fill="${STROKE}" />
+        <circle cx="66" cy="130" r="3" fill="${STROKE}" />
+        <rect x="84" y="140" width="32" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="62" y="150" width="76" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
       `,
     },
     {
@@ -237,8 +249,6 @@
     }
     return `
       <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-        <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
-        <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="${STROKE}" stroke-width="4" />
         <g>${item.render(color.hex)}</g>
       </svg>
     `;
