@@ -134,14 +134,8 @@
       id: "toothbrush",
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
-      render: (hex) => `
-        <g transform="rotate(-25 100 100)">
-          <rect x="40" y="98" width="96" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <rect x="128" y="90" width="46" height="34" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
-            <path d="M138 86 v-12" /><path d="M148 86 v-12" /><path d="M158 86 v-12" /><path d="M168 86 v-12" />
-          </g>
-        </g>
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/2725/2725538.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
@@ -157,14 +151,8 @@
       id: "towel",
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
-      render: (hex) => `
-        <rect x="40" y="52" width="120" height="10" rx="5" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
-        <path d="M64 62 h72 v98 a10 10 0 0 1 -10 10 h-52 a10 10 0 0 1 -10 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <path d="M86 62 v108 M114 62 v108" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3" />
-        <g stroke="${STROKE}" stroke-width="3" stroke-linecap="round">
-          <path d="M72 170 v10" /><path d="M82 170 v10" /><path d="M92 170 v10" /><path d="M102 170 v10" />
-          <path d="M112 170 v10" /><path d="M122 170 v10" /><path d="M132 170 v10" />
-        </g>
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/804/804272.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
