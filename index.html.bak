@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f8f1e4" />
+    <title>情绪练习</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="screen-start" class="screen screen--start" aria-labelledby="start-title">
+      <div class="start-inner">
+        <div class="start-content">
+          <h1 id="start-title" class="start-title">情绪练习</h1>
+
+          <div class="cta-wrap">
+            <div class="orbit" aria-hidden="true">
+              <span class="arrow" style="--a: 0deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 30deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 60deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 90deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 120deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 150deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 180deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 210deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 240deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 270deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 300deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+              <span class="arrow" style="--a: 330deg">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg>
+              </span>
+            </div>
+
+            <button id="start-btn" class="start-btn" type="button">开始练习</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-menu" class="screen screen--menu" aria-labelledby="menu-title" hidden>
+      <header class="menu-header">
+        <button id="menu-back-btn" class="icon-btn" type="button" aria-label="回到首页">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+      </header>
+
+      <main class="menu-main">
+        <h1 id="menu-title" class="menu-title">选择练习</h1>
+        <div class="menu-list">
+          <button id="practice-entry-btn" class="menu-card" type="button">
+            <span class="menu-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8.5 10h.01M15.5 10h.01" />
+                <path d="M8.5 14.5c1 1.2 2.2 1.8 3.5 1.8s2.5-.6 3.5-1.8" />
+              </svg>
+            </span>
+            <span class="menu-card-text">
+              <span class="menu-card-title">情绪练习</span>
+              <span class="menu-card-desc">看图辨认情绪</span>
+            </span>
+          </button>
+        </div>
+      </main>
+    </section>
+
+    <section id="screen-practice" class="screen screen--practice" aria-labelledby="practice-title" hidden>
+      <h1 id="practice-title" class="visually-hidden">情绪练习</h1>
+
+      <header class="practice-header">
+        <button
+          id="settings-btn"
+          class="icon-btn"
+          type="button"
+          aria-label="设置"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="settings-dialog"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="3" />
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+          </svg>
+        </button>
+      </header>
+
+      <main class="practice-main">
+        <p class="prompt">这是什么情绪？</p>
+        <div id="face" class="face" role="img" aria-label="一张表情图片"></div>
+        <div id="answers" class="answers" role="group" aria-label="选择情绪"></div>
+        <div class="feedback-slot">
+          <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+        </div>
+      </main>
+    </section>
+
+    <div id="settings-overlay" class="overlay" hidden>
+      <div id="settings-dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+        <h2 id="settings-title" class="dialog-title">设置</h2>
+        <div class="dialog-actions">
+          <button id="restart-btn" class="dialog-btn dialog-btn--primary" type="button">重新开始</button>
+          <button id="home-btn" class="dialog-btn dialog-btn--secondary" type="button">回到首页</button>
+          <button id="close-settings-btn" class="dialog-btn dialog-btn--quiet" type="button">关闭</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

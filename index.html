@@ -85,12 +85,26 @@
               <span class="menu-card-desc">看图辨认情绪</span>
             </span>
           </button>
+          <button id="cognitive-practice-entry-btn" class="menu-card" type="button">
+            <span class="menu-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>
+            </span>
+            <span class="menu-card-text">
+              <span class="menu-card-title">认知训练</span>
+              <span class="menu-card-desc">物品与颜色辨识</span>
+            </span>
+          </button>
         </div>
       </main>
     </section>
 
     <section id="screen-practice" class="screen screen--practice" aria-labelledby="practice-title" hidden>
-      <h1 id="practice-title" class="visually-hidden">情绪练习</h1>
+      <h1 id="practice-title" class="visually-hidden">练习</h1>
 
       <header class="practice-header">
         <button
@@ -110,8 +124,8 @@
       </header>
 
       <main class="practice-main">
-        <p class="prompt">这是什么情绪？</p>
-        <div id="face" class="face" role="img" aria-label="一张表情图片"></div>
+        <p id="practice-prompt" class="prompt">这是什么？</p>
+        <div id="display-area" class="face" role="img" aria-label="一张表情图片"></div>
         <div id="answers" class="answers" role="group" aria-label="选择情绪"></div>
         <div class="feedback-slot">
           <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
