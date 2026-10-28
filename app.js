@@ -142,14 +142,16 @@
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
-        <g transform="rotate(-12 100 100)">
-          <rect x="34" y="108" width="104" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <rect x="130" y="92" width="44" height="34" rx="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
-            <path d="M140 92 v-14" /><path d="M150 92 v-14" /><path d="M160 92 v-14" /><path d="M170 92 v-14" />
-          </g>
-          <path d="M48 117 h18 M72 117 h18" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
-        </g>
+        <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="4" />
+        <path d="M46 128 q13.5 -9 27 0 t27 0 t27 0 t27 0" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round" />
+        <rect x="91.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <rect x="104.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="70" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="70" cy="84" r="4.5" fill="#FFFCF6" />
+        <circle cx="130" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="130" cy="84" r="4.5" fill="#FFFCF6" />
+        <rect x="66" y="20" width="46" height="42" rx="20" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M78 30 v16 M88 28 v18 M98 28 v18 M108 30 v16" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="5" stroke-linecap="round" />
       `,
     },
     {
@@ -166,13 +168,12 @@
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
       render: (hex) => `
-        <rect x="20" y="36" width="12" height="12" rx="3" fill="${STROKE}" />
-        <circle cx="42" cy="42" r="12" fill="none" stroke="${STROKE}" stroke-width="5" />
-        <g transform="rotate(-5 100 100)">
-          <rect x="40" y="50" width="128" height="112" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <path d="M40 78 h128 M40 102 h128 M40 126 h128" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="7" />
-          <path d="M150 50 v112" stroke="${STROKE}" stroke-width="2.5" stroke-opacity="0.3" />
-        </g>
+        <rect x="22" y="10" width="136" height="186" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="158" y="10" width="28" height="174" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="24" y="140" width="132" height="8" fill="#FFFFFF" fill-opacity="0.55" />
+        <rect x="24" y="162" width="132" height="10" fill="#FFFFFF" fill-opacity="0.38" />
+        <path d="M170 26 v146" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" />
+        <rect x="4" y="8" width="192" height="14" rx="7" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
       `,
     },
     {
@@ -180,12 +181,18 @@
       name: "牙膏",
       colors: ["blue", "green", "orange"],
       render: (hex) => `
-        <rect x="88" y="36" width="24" height="16" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="93" y="52" width="14" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M82 62 h36 v76 h-36 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <rect x="88" y="88" width="24" height="34" rx="4" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3" />
-        <path d="M92 98 h16 M92 106 h16" stroke="${STROKE}" stroke-width="3" stroke-linecap="round" />
-        <path d="M84 138 v6 M90 138 v6 M96 138 v6 M102 138 v6 M108 138 v6 M114 138 v6" stroke="${STROKE}" stroke-width="2" />
+        <rect x="47" y="4" width="106" height="23" rx="6" fill="#FFFCF4" stroke="${STROKE}" stroke-width="4" />
+        <rect x="51" y="10" width="98" height="7" rx="3.5" fill="${hex}" />
+        <path d="M49 27 H151 L140 150 H60 Z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M55 31 H68 L72 146 H61 Z" fill="${STROKE}" fill-opacity="0.1" />
+        <path d="M83.6 46.9 Q95.8 44.8 99.2 51.6 L107 46.9 L113.3 46.9 L123.4 53.9 Q126.6 57.8 125 66.4 L117.2 77.3 L117.2 83.6 L120.3 89.8 L120.3 97.7 Q118.4 105 107 103.1 L99.2 93.8 L96.9 101.6 Q94.2 103.9 86.7 103.1 L81.3 97.7 L81.3 83.6 L71.9 69.5 L71.9 58.6 L80.5 48.4 Z" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3.5" stroke-linejoin="round" />
+        <path d="M109 82 Q103 88 104 96 Q105 101 111 101" fill="none" stroke="${STROKE}" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round" />
+        <rect x="72" y="116" width="56" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.8" />
+        <rect x="76" y="128" width="48" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.65" />
+        <rect x="60" y="150" width="80" height="9" rx="4" fill="${STROKE}" />
+        <rect x="66" y="159" width="68" height="13" rx="4" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3.5" />
+        <rect x="67" y="172" width="66" height="6" rx="3" fill="${STROKE}" />
+        <rect x="72" y="178" width="56" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
       `,
     },
     {
