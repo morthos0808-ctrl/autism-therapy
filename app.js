@@ -76,20 +76,28 @@
       id: "wash-basin",
       name: "洗手台",
       colors: ["blue", "green", "yellow"],
-      variants: [
-        "https://cdn-icons-png.flaticon.com/128/8347/8347677.png",
-        "https://cdn-icons-png.flaticon.com/128/5798/5798641.png",
-      ],
+      render: (hex) => `
+        <ellipse cx="100" cy="162" rx="30" ry="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M86 118 h28 l8 40 h-44 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M46 78 h108 l-12 30 a18 18 0 0 1 -16 10 h-52 a18 18 0 0 1 -16 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <ellipse cx="100" cy="78" rx="54" ry="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <ellipse cx="100" cy="79" rx="40" ry="8" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2" />
+        <circle cx="100" cy="80" r="4" fill="${STROKE}" />
+      `,
     },
     {
       id: "faucet",
       name: "水龙头",
       colors: ["red", "blue", "green"],
-      variants: [
-        "https://cdn-icons-png.flaticon.com/128/735/735349.png",
-        "https://cdn-icons-png.flaticon.com/128/5798/5798641.png",
-        "https://cdn-icons-png.flaticon.com/128/2908/2908435.png",
-      ],
+      render: (hex) => `
+        <rect x="82" y="152" width="60" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="106" y="96" width="22" height="58" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${STROKE}" stroke-width="22" stroke-linecap="round" />
+        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${hex}" stroke-width="14" stroke-linecap="round" />
+        <rect x="132" y="124" width="22" height="12" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="82" y="92" width="30" height="9" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M143 140 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
+      `,
     },
     {
       id: "hand-soap",
@@ -126,7 +134,16 @@
       id: "toothbrush",
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
-      variants: ["https://cdn-icons-png.flaticon.com/128/2725/2725538.png"],
+      render: (hex) => `
+        <g transform="rotate(-12 100 100)">
+          <rect x="34" y="108" width="104" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <rect x="130" y="92" width="44" height="34" rx="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
+            <path d="M140 92 v-14" /><path d="M150 92 v-14" /><path d="M160 92 v-14" /><path d="M170 92 v-14" />
+          </g>
+          <path d="M48 117 h18 M72 117 h18" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
+        </g>
+      `,
     },
     {
       id: "tooth-cup",
@@ -141,13 +158,28 @@
       id: "towel",
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
-      variants: ["https://cdn-icons-png.flaticon.com/128/804/804272.png"],
+      render: (hex) => `
+        <rect x="38" y="50" width="124" height="10" rx="5" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
+        <path d="M64 60 h72 v98 a10 10 0 0 1 -10 10 h-52 a10 10 0 0 1 -10 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M86 60 v108 M114 60 v108" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3" />
+        <g stroke="${STROKE}" stroke-width="3" stroke-linecap="round">
+          <path d="M72 168 v10" /><path d="M82 168 v10" /><path d="M92 168 v10" /><path d="M102 168 v10" />
+          <path d="M112 168 v10" /><path d="M122 168 v10" /><path d="M132 168 v10" />
+        </g>
+      `,
     },
     {
       id: "toothpaste",
       name: "牙膏",
       colors: ["blue", "green", "orange"],
-      variants: ["https://cdn-icons-png.flaticon.com/128/2779/2779344.png"],
+      render: (hex) => `
+        <rect x="88" y="36" width="24" height="16" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="93" y="52" width="14" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M82 62 h36 v76 h-36 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <rect x="88" y="88" width="24" height="34" rx="4" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3" />
+        <path d="M92 98 h16 M92 106 h16" stroke="${STROKE}" stroke-width="3" stroke-linecap="round" />
+        <path d="M84 138 v6 M90 138 v6 M96 138 v6 M102 138 v6 M108 138 v6 M114 138 v6" stroke="${STROKE}" stroke-width="2" />
+      `,
     },
     {
       id: "bed",
@@ -188,7 +220,17 @@
       id: "tv",
       name: "电视",
       colors: ["red", "blue", "purple"],
-      variants: ["https://cdn-icons-png.flaticon.com/128/14377/14377366.png"],
+      render: (hex) => `
+        <path d="M100 54 L76 26 M100 54 L124 26" fill="none" stroke="${STROKE}" stroke-width="4" stroke-linecap="round" />
+        <circle cx="76" cy="26" r="4" fill="${STROKE}" />
+        <circle cx="124" cy="26" r="4" fill="${STROKE}" />
+        <rect x="36" y="54" width="128" height="86" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="46" y="64" width="108" height="56" rx="4" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <circle cx="54" cy="130" r="3" fill="${STROKE}" />
+        <circle cx="66" cy="130" r="3" fill="${STROKE}" />
+        <rect x="84" y="140" width="32" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="62" y="150" width="76" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
     },
     {
       id: "door",
@@ -203,24 +245,16 @@
     },
   ];
 
-  const makeObject = (itemId, colorId, variantIndex = 0) => {
+  const makeObject = (itemId, colorId) => {
     const color = COGNITIVE_COLORS.find((c) => c.id === colorId) || COGNITIVE_COLORS[0];
     const item = COGNITIVE_ITEMS.find((i) => i.id === itemId);
     if (!item) {
       return "";
     }
 
-    let content = "";
-    if (item.variants && item.variants.length > 0) {
-      const href = item.variants[variantIndex % item.variants.length];
-      content = `<image href="${href}" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />`;
-    } else if (typeof item.render === "function") {
-      content = item.render(color.hex);
-    }
-
     return `
       <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-        <g>${content}</g>
+        <g>${item.render(color.hex)}</g>
       </svg>
     `;
   };
@@ -287,8 +321,8 @@
   function refillQueueCognitive() {
     const items = [];
     COGNITIVE_ITEMS.forEach((item) => {
-      (item.colors || []).forEach((colorId, variantIndex) => {
-        items.push({ type: "cognitive", itemId: item.id, itemName: item.name, colorId, variantIndex });
+      (item.colors || []).forEach((colorId) => {
+        items.push({ type: "cognitive", itemId: item.id, itemName: item.name, colorId });
       });
     });
 
@@ -335,7 +369,7 @@
     const correct = item ? item.name : target.itemName;
 
     els.practicePrompt.textContent = "这是什么？";
-    els.displayArea.innerHTML = makeObject(target.itemId, target.colorId, target.variantIndex);
+    els.displayArea.innerHTML = makeObject(target.itemId, target.colorId);
     els.feedback.textContent = "";
     els.answers.innerHTML = "";
     els.answers.classList.remove("answers--two", "answers--one");
