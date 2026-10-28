@@ -76,17 +76,20 @@
       id: "wash-basin",
       name: "洗手台",
       colors: ["blue", "green", "yellow"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/8347/8347677.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: [
+        "https://cdn-icons-png.flaticon.com/128/8347/8347677.png",
+        "https://cdn-icons-png.flaticon.com/128/5798/5798641.png",
+      ],
     },
     {
       id: "faucet",
       name: "水龙头",
       colors: ["red", "blue", "green"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/735/735349.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: [
+        "https://cdn-icons-png.flaticon.com/128/735/735349.png",
+        "https://cdn-icons-png.flaticon.com/128/5798/5798641.png",
+        "https://cdn-icons-png.flaticon.com/128/2908/2908435.png",
+      ],
     },
     {
       id: "hand-soap",
@@ -123,9 +126,7 @@
       id: "toothbrush",
       name: "牙刷",
       colors: ["red", "blue", "yellow", "green"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/2725/2725538.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: ["https://cdn-icons-png.flaticon.com/128/2725/2725538.png"],
     },
     {
       id: "tooth-cup",
@@ -140,17 +141,13 @@
       id: "towel",
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/804/804272.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: ["https://cdn-icons-png.flaticon.com/128/804/804272.png"],
     },
     {
       id: "toothpaste",
       name: "牙膏",
       colors: ["blue", "green", "orange"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/2779/2779344.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: ["https://cdn-icons-png.flaticon.com/128/2779/2779344.png"],
     },
     {
       id: "bed",
@@ -191,9 +188,7 @@
       id: "tv",
       name: "电视",
       colors: ["red", "blue", "purple"],
-      render: () => `
-        <image href="https://cdn-icons-png.flaticon.com/128/14377/14377366.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
-      `,
+      variants: ["https://cdn-icons-png.flaticon.com/128/14377/14377366.png"],
     },
     {
       id: "door",
@@ -208,15 +203,24 @@
     },
   ];
 
-  const makeObject = (itemId, colorId) => {
+  const makeObject = (itemId, colorId, variantIndex = 0) => {
     const color = COGNITIVE_COLORS.find((c) => c.id === colorId) || COGNITIVE_COLORS[0];
     const item = COGNITIVE_ITEMS.find((i) => i.id === itemId);
     if (!item) {
       return "";
     }
+
+    let content = "";
+    if (item.variants && item.variants.length > 0) {
+      const href = item.variants[variantIndex % item.variants.length];
+      content = `<image href="${href}" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />`;
+    } else if (typeof item.render === "function") {
+      content = item.render(color.hex);
+    }
+
     return `
       <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-        <g>${item.render(color.hex)}</g>
+        <g>${content}</g>
       </svg>
     `;
   };
@@ -283,8 +287,8 @@
   function refillQueueCognitive() {
     const items = [];
     COGNITIVE_ITEMS.forEach((item) => {
-      (item.colors || []).forEach((colorId) => {
-        items.push({ type: "cognitive", itemId: item.id, itemName: item.name, colorId });
+      (item.colors || []).forEach((colorId, variantIndex) => {
+        items.push({ type: "cognitive", itemId: item.id, itemName: item.name, colorId, variantIndex });
       });
     });
 
@@ -331,7 +335,7 @@
     const correct = item ? item.name : target.itemName;
 
     els.practicePrompt.textContent = "这是什么？";
-    els.displayArea.innerHTML = makeObject(target.itemId, target.colorId);
+    els.displayArea.innerHTML = makeObject(target.itemId, target.colorId, target.variantIndex);
     els.feedback.textContent = "";
     els.answers.innerHTML = "";
     els.answers.classList.remove("answers--two", "answers--one");
