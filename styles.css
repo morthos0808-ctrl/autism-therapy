@@ -296,7 +296,8 @@ button {
 
 .practice-header {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 18px 0;
 }
 
@@ -318,6 +319,31 @@ button {
 }
 
 .icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.quit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--green-line);
+  border-radius: 999px;
+  background: var(--green-soft);
+  color: var(--ink-soft);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 180ms ease;
+}
+
+.quit-btn:hover {
+  background: #e7e9d3;
+}
+
+.quit-btn svg {
   width: 20px;
   height: 20px;
 }

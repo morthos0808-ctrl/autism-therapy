@@ -76,27 +76,16 @@
       id: "wash-basin",
       name: "洗手台",
       colors: ["blue", "green", "yellow"],
-      render: (hex) => `
-        <ellipse cx="100" cy="82" rx="52" ry="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M48 82 v16 a52 16 0 0 0 104 0 v-16" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <ellipse cx="100" cy="82" rx="38" ry="9" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2" />
-        <rect x="86" y="110" width="28" height="50" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="72" y="158" width="56" height="10" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M100 54 v-2 a10 10 0 0 1 20 0 v4" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/8347/8347677.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
       id: "faucet",
       name: "水龙头",
       colors: ["red", "blue", "green"],
-      render: (hex) => `
-        <rect x="82" y="152" width="60" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="106" y="96" width="22" height="58" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${STROKE}" stroke-width="22" stroke-linecap="round" />
-        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${hex}" stroke-width="14" stroke-linecap="round" />
-        <rect x="132" y="124" width="22" height="12" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="82" y="92" width="30" height="9" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M143 140 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
+      render: () => `
+        <image href="https://cdn-icons-png.flaticon.com/128/735/735349.png" x="30" y="30" width="140" height="140" preserveAspectRatio="xMidYMid meet" />
       `,
     },
     {
@@ -241,6 +230,7 @@
     practiceEntryBtn: document.getElementById("practice-entry-btn"),
     cognitivePracticeEntryBtn: document.getElementById("cognitive-practice-entry-btn"),
     settingsBtn: document.getElementById("settings-btn"),
+    quitBtn: document.getElementById("quit-btn"),
     overlay: document.getElementById("settings-overlay"),
     dialog: document.getElementById("settings-dialog"),
     closeSettingsBtn: document.getElementById("close-settings-btn"),
@@ -574,6 +564,7 @@
   els.practiceEntryBtn.addEventListener("click", () => startSession("emotion"));
   els.cognitivePracticeEntryBtn.addEventListener("click", () => startSession("cognitive"));
   els.settingsBtn.addEventListener("click", openSettings);
+  els.quitBtn.addEventListener("click", openMenu);
   els.closeSettingsBtn.addEventListener("click", () => closeSettings());
   els.restartBtn.addEventListener("click", restartSession);
   els.homeBtn.addEventListener("click", goHome);
