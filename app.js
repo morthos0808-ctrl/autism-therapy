@@ -69,11 +69,164 @@
     { id: "purple", name: "紫色", hex: "#B388EB" },
   ];
 
+  const STROKE = "#4A4433";
+
   const COGNITIVE_ITEMS = [
-    { id: "apple", name: "苹果", colors: ["red", "green", "yellow"] },
-    { id: "ball", name: "球", colors: ["red", "blue", "yellow", "green"] },
-    { id: "block", name: "方块", colors: ["red", "blue", "yellow", "green"] },
-    { id: "star", name: "星星", colors: ["yellow", "orange", "red", "purple"] },
+    {
+      id: "wash-basin",
+      name: "洗手台",
+      colors: ["blue", "green", "yellow"],
+      render: (hex) => `
+        <ellipse cx="100" cy="82" rx="52" ry="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M48 82 v16 a52 16 0 0 0 104 0 v-16" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <ellipse cx="100" cy="82" rx="38" ry="9" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2" />
+        <rect x="86" y="110" width="28" height="50" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="72" y="158" width="56" height="10" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M100 54 v-2 a10 10 0 0 1 20 0 v4" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+      `,
+    },
+    {
+      id: "faucet",
+      name: "水龙头",
+      colors: ["red", "blue", "green"],
+      render: (hex) => `
+        <path d="M72 136 V106 a28 28 0 0 1 56 0 V126" fill="none" stroke="${STROKE}" stroke-width="24" stroke-linecap="round" />
+        <path d="M72 136 V106 a28 28 0 0 1 56 0 V126" fill="none" stroke="${hex}" stroke-width="16" stroke-linecap="round" />
+        <rect x="116" y="124" width="22" height="14" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="58" y="136" width="26" height="14" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "hand-soap",
+      name: "洗手液",
+      colors: ["red", "green", "purple"],
+      render: (hex) => `
+        <rect x="70" y="84" width="60" height="76" rx="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="88" y="64" width="24" height="26" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M112 68 h24 v12 h-20" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M84 108 h32" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="5" stroke-linecap="round" />
+      `,
+    },
+    {
+      id: "soap-bar",
+      name: "香皂",
+      colors: ["red", "blue", "yellow", "green"],
+      render: (hex) => `
+        <rect x="48" y="78" width="104" height="60" rx="30" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M78 96 q22 -8 44 0" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linecap="round" />
+      `,
+    },
+    {
+      id: "mirror",
+      name: "镜子",
+      colors: ["blue", "green", "yellow"],
+      render: (hex) => `
+        <ellipse cx="100" cy="90" rx="46" ry="54" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <ellipse cx="100" cy="90" rx="34" ry="42" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <path d="M84 76 q10 -10 22 -6" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round" />
+        <path d="M100 144 v14 M84 160 h32" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+      `,
+    },
+    {
+      id: "toothbrush",
+      name: "牙刷",
+      colors: ["red", "blue", "yellow", "green"],
+      render: (hex) => `
+        <rect x="88" y="70" width="18" height="86" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="80" y="46" width="34" height="30" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <g stroke="#9AA0A6" stroke-width="4" stroke-linecap="round">
+          <path d="M87 52 v14" /><path d="M95 52 v14" /><path d="M103 52 v14" /><path d="M111 52 v14" />
+        </g>
+      `,
+    },
+    {
+      id: "tooth-cup",
+      name: "牙杯",
+      colors: ["red", "yellow", "purple"],
+      render: (hex) => `
+        <path d="M64 78 h72 l-9 72 a8 8 0 0 1 -8 7 h-38 a8 8 0 0 1 -8 -7 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <ellipse cx="100" cy="78" rx="36" ry="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "towel",
+      name: "毛巾",
+      colors: ["red", "blue", "green", "orange"],
+      render: (hex) => `
+        <rect x="60" y="72" width="80" height="90" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M60 96 h80" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" />
+        <path d="M60 122 h80" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" />
+        <path d="M60 148 h80" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" />
+        <path d="M80 58 h40" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+      `,
+    },
+    {
+      id: "toothpaste",
+      name: "牙膏",
+      colors: ["blue", "green", "orange"],
+      render: (hex) => `
+        <rect x="88" y="44" width="24" height="16" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M78 60 h44 v84 a10 10 0 0 1 -44 0 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M78 84 h44" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="6" />
+      `,
+    },
+    {
+      id: "bed",
+      name: "床",
+      colors: ["red", "blue", "green"],
+      render: (hex) => `
+        <rect x="38" y="80" width="18" height="66" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="40" y="104" width="120" height="40" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="60" y="90" width="36" height="18" rx="6" fill="#FFFFFF" stroke="${STROKE}" stroke-width="4" />
+        <path d="M96 104 v40" stroke="${STROKE}" stroke-width="3" />
+        <rect x="46" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="142" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "table",
+      name: "桌子",
+      colors: ["yellow", "green", "orange"],
+      render: (hex) => `
+        <rect x="40" y="86" width="120" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="52" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="136" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="96" y="102" width="12" height="50" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "chair",
+      name: "椅子",
+      colors: ["blue", "yellow", "green"],
+      render: (hex) => `
+        <rect x="64" y="44" width="18" height="78" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="64" y="104" width="70" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="68" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="120" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "tv",
+      name: "电视",
+      colors: ["red", "blue", "purple"],
+      render: (hex) => `
+        <rect x="42" y="56" width="116" height="78" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="52" y="66" width="96" height="58" rx="5" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <rect x="88" y="134" width="24" height="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="68" y="146" width="64" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+      `,
+    },
+    {
+      id: "door",
+      name: "门",
+      colors: ["red", "blue", "green", "orange"],
+      render: (hex) => `
+        <rect x="58" y="42" width="84" height="118" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="70" y="56" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="3" />
+        <rect x="70" y="106" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="3" />
+        <circle cx="128" cy="104" r="5" fill="${STROKE}" />
+      `,
+    },
   ];
 
   const makeObject = (itemId, colorId) => {
@@ -82,57 +235,13 @@
     if (!item) {
       return "";
     }
-
-    if (item.id === "apple") {
-      return `
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
-          <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="#4A4433" stroke-width="4" />
-          <g>
-            <ellipse cx="100" cy="110" rx="38" ry="42" fill="${color.hex}" stroke="#4A4433" stroke-width="4" />
-            <path d="M100 68 Q110 52 98 48 Q90 58 100 68 Z" fill="#7FC97F" stroke="#4A4433" stroke-width="3" />
-          </g>
-        </svg>
-      `;
-    }
-
-    if (item.id === "ball") {
-      return `
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
-          <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="#4A4433" stroke-width="4" />
-          <g>
-            <circle cx="100" cy="110" r="42" fill="${color.hex}" stroke="#4A4433" stroke-width="4" />
-          </g>
-        </svg>
-      `;
-    }
-
-    if (item.id === "block") {
-      return `
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
-          <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="#4A4433" stroke-width="4" />
-          <g>
-            <rect x="62" y="72" width="76" height="76" rx="8" fill="${color.hex}" stroke="#4A4433" stroke-width="4" />
-          </g>
-        </svg>
-      `;
-    }
-
-    if (item.id === "star") {
-      return `
-        <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-          <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
-          <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="#4A4433" stroke-width="4" />
-          <g>
-            <path d="M100 62 L111 92 L143 92 L117 112 L127 142 L100 122 L73 142 L83 112 L57 92 L89 92 Z" fill="${color.hex}" stroke="#4A4433" stroke-width="4" stroke-linejoin="round" />
-          </g>
-        </svg>
-      `;
-    }
-
-    return "";
+    return `
+      <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <circle cx="100" cy="100" r="82" fill="#ECEEDC" />
+        <circle cx="100" cy="100" r="74" fill="#FFFCF4" stroke="${STROKE}" stroke-width="4" />
+        <g>${item.render(color.hex)}</g>
+      </svg>
+    `;
   };
 
   const els = {
@@ -240,17 +349,18 @@
   }
 
   function renderCognitiveQuestion(target) {
-    els.practicePrompt.textContent = "这是什么颜色？";
+    const item = COGNITIVE_ITEMS.find((i) => i.id === target.itemId);
+    const correct = item ? item.name : target.itemName;
+
+    els.practicePrompt.textContent = "这是什么？";
     els.displayArea.innerHTML = makeObject(target.itemId, target.colorId);
     els.feedback.textContent = "";
     els.answers.innerHTML = "";
     els.answers.classList.remove("answers--two", "answers--one");
 
-    const color = COGNITIVE_COLORS.find((c) => c.id === target.colorId);
-    const correct = color ? color.name : target.colorId;
-    const distractors = shuffle(COGNITIVE_COLORS.filter((c) => c.id !== target.colorId))
+    const distractors = shuffle(COGNITIVE_ITEMS.filter((i) => i.id !== target.itemId))
       .slice(0, 2)
-      .map((c) => c.name);
+      .map((i) => i.name);
     const options = shuffle([correct, ...distractors]);
 
     options.forEach((label) => {
