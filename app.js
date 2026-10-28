@@ -77,12 +77,18 @@
       name: "洗手台",
       colors: ["blue", "green", "yellow"],
       render: (hex) => `
-        <ellipse cx="100" cy="162" rx="30" ry="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M86 118 h28 l8 40 h-44 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <path d="M46 78 h108 l-12 30 a18 18 0 0 1 -16 10 h-52 a18 18 0 0 1 -16 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <ellipse cx="100" cy="78" rx="54" ry="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <ellipse cx="100" cy="79" rx="40" ry="8" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2" />
-        <circle cx="100" cy="80" r="4" fill="${STROKE}" />
+        <ellipse cx="100" cy="186" rx="34" ry="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M84 146 h32 l10 38 h-52 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M16 80 C20 122 48 152 100 152 C152 152 180 122 184 80 Z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <ellipse cx="100" cy="80" rx="84" ry="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <ellipse cx="100" cy="82" rx="64" ry="11" fill="#DDEEF5" stroke="${STROKE}" stroke-width="2.5" />
+        <circle cx="100" cy="132" r="5" fill="${STROKE}" />
+        <rect x="60" y="50" width="80" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
+        <rect x="92" y="18" width="16" height="48" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <circle cx="100" cy="16" r="8" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
+        <rect x="88" y="60" width="24" height="8" rx="3" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
+        <circle cx="62" cy="54" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
+        <circle cx="138" cy="54" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="3" />
       `,
     },
     {
@@ -90,13 +96,14 @@
       name: "水龙头",
       colors: ["red", "blue", "green"],
       render: (hex) => `
-        <rect x="82" y="152" width="60" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="106" y="96" width="22" height="58" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${STROKE}" stroke-width="22" stroke-linecap="round" />
-        <path d="M117 96 v-8 a26 26 0 0 1 26 26 v18" fill="none" stroke="${hex}" stroke-width="14" stroke-linecap="round" />
-        <rect x="132" y="124" width="22" height="12" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="82" y="92" width="30" height="9" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M143 140 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
+        <rect x="102" y="176" width="76" height="16" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="124" y="84" width="36" height="94" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M142 88 V52 Q142 30 120 30 H84 Q64 30 64 52 V66" fill="none" stroke="${STROKE}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M142 88 V52 Q142 30 120 30 H84 Q64 30 64 52 V66" fill="none" stroke="${hex}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+        <rect x="54" y="64" width="20" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="92" y="104" width="40" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <circle cx="92" cy="111" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M64 84 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
       `,
     },
     {
@@ -159,12 +166,12 @@
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
       render: (hex) => `
-        <rect x="38" y="50" width="124" height="10" rx="5" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
-        <path d="M64 60 h72 v98 a10 10 0 0 1 -10 10 h-52 a10 10 0 0 1 -10 -10 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <path d="M86 60 v108 M114 60 v108" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="3" />
-        <g stroke="${STROKE}" stroke-width="3" stroke-linecap="round">
-          <path d="M72 168 v10" /><path d="M82 168 v10" /><path d="M92 168 v10" /><path d="M102 168 v10" />
-          <path d="M112 168 v10" /><path d="M122 168 v10" /><path d="M132 168 v10" />
+        <rect x="20" y="36" width="12" height="12" rx="3" fill="${STROKE}" />
+        <circle cx="42" cy="42" r="12" fill="none" stroke="${STROKE}" stroke-width="5" />
+        <g transform="rotate(-5 100 100)">
+          <rect x="40" y="50" width="128" height="112" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <path d="M40 78 h128 M40 102 h128 M40 126 h128" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="7" />
+          <path d="M150 50 v112" stroke="${STROKE}" stroke-width="2.5" stroke-opacity="0.3" />
         </g>
       `,
     },
