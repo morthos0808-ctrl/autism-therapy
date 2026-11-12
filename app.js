@@ -58,6 +58,358 @@
         <path d="M156 64 C150 74 150 80 156 83 C162 80 162 74 156 64 Z" fill="#D8D2BD" stroke="#4A4433" stroke-width="2.5" />
       `),
     },
+    {
+      id: "excited",
+      label: "兴奋的",
+      face: makeFace(`
+        <path d="M56 70 Q70 58 84 70" />
+        <path d="M144 70 Q130 58 116 70" />
+        <circle cx="73" cy="93" r="9" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="93" r="9" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="91" r="3.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="91" r="3.5" fill="#4A4433" stroke="none" />
+        <path d="M62 120 Q100 160 138 120 Q100 138 62 120 Z" fill="#4A4433" stroke="none" />
+        <path d="M74 126 Q100 120 126 126" fill="none" stroke="#FFFCF4" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="54" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <ellipse cx="146" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <path d="M36 82 L24 74 M36 100 L22 100 M36 118 L24 126" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <path d="M164 82 L176 74 M164 100 L178 100 M164 118 L176 126" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "hopeful",
+      label: "满怀希望的",
+      face: makeFace(`
+        <path d="M58 74 Q71 62 84 72" />
+        <path d="M142 74 Q129 62 116 72" />
+        <circle cx="73" cy="94" r="7" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="7" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="90" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="90" r="3" fill="#4A4433" stroke="none" />
+        <path d="M74 126 Q100 142 126 126" />
+        <path d="M154 54 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 Z" fill="#F2D77C" stroke="none" />
+      `),
+    },
+    {
+      id: "calm",
+      label: "平静的",
+      face: makeFace(`
+        <path d="M60 74 Q72 70 84 74" />
+        <path d="M140 74 Q128 70 116 74" />
+        <circle cx="73" cy="95" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="95" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="95" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="95" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M76 128 Q100 138 124 128" />
+      `),
+    },
+    {
+      id: "proud",
+      label: "自豪的",
+      face: makeFace(`
+        <path d="M58 72 Q71 62 84 70" />
+        <path d="M116 72 Q129 66 142 72" />
+        <path d="M64 96 Q73 84 82 96" />
+        <path d="M118 96 Q127 84 136 96" />
+        <path d="M72 126 Q100 148 128 126" />
+        <ellipse cx="54" cy="120" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.6" />
+        <ellipse cx="146" cy="120" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.6" />
+        <path d="M152 54 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#F2D77C" stroke="none" />
+      `),
+    },
+    {
+      id: "satisfied",
+      label: "满足的",
+      face: makeFace(`
+        <path d="M60 74 Q72 70 84 74" />
+        <path d="M140 74 Q128 70 116 74" />
+        <path d="M64 96 Q73 86 82 96" />
+        <path d="M118 96 Q127 86 136 96" />
+        <path d="M76 128 Q100 144 124 128" />
+        <ellipse cx="54" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <ellipse cx="146" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+      `),
+    },
+    {
+      id: "grateful",
+      label: "感激的",
+      face: makeFace(`
+        <path d="M58 76 Q71 66 84 72" />
+        <path d="M142 76 Q129 66 116 72" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M74 128 Q100 142 126 128" />
+        <path d="M44 70 C44 64 52 60 56 66 C60 60 68 64 68 70 C68 78 56 86 56 86 C56 86 44 78 44 70 Z" fill="#E85D5D" stroke="none" />
+        <ellipse cx="146" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.55" />
+      `),
+    },
+    {
+      id: "surprised",
+      label: "惊喜的",
+      face: makeFace(`
+        <path d="M56 66 Q70 52 84 66" />
+        <path d="M144 66 Q130 52 116 66" />
+        <circle cx="73" cy="92" r="10" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="92" r="10" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <ellipse cx="100" cy="134" rx="13" ry="17" fill="#4A4433" stroke="none" />
+        <path d="M154 52 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 Z" fill="#F2D77C" stroke="none" />
+        <path d="M170 70 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 Z" fill="#F2D77C" stroke="none" />
+      `),
+    },
+    {
+      id: "delighted",
+      label: "欣喜的",
+      face: makeFace(`
+        <path d="M58 70 Q71 60 84 70" />
+        <path d="M142 70 Q129 60 116 70" />
+        <path d="M64 96 Q73 82 82 96" />
+        <path d="M118 96 Q127 82 136 96" />
+        <path d="M62 120 Q100 160 138 120 Q100 138 62 120 Z" fill="#4A4433" stroke="none" />
+        <path d="M74 126 Q100 120 126 126" fill="none" stroke="#FFFCF4" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="54" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <ellipse cx="146" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <path d="M152 54 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" fill="#F2D77C" stroke="none" />
+        <path d="M44 60 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 Z" fill="#F2D77C" stroke="none" />
+      `),
+    },
+    {
+      id: "peaceful",
+      label: "安宁的",
+      face: makeFace(`
+        <path d="M60 74 Q72 70 84 74" />
+        <path d="M140 74 Q128 70 116 74" />
+        <path d="M64 96 Q73 102 82 96" />
+        <path d="M118 96 Q127 102 136 96" />
+        <path d="M76 128 Q100 138 124 128" />
+        <path d="M154 54 Q166 48 170 60 Q158 66 154 54 Z" fill="#7FC97F" stroke="none" />
+      `),
+    },
+    {
+      id: "confident",
+      label: "自信的",
+      face: makeFace(`
+        <path d="M58 72 Q71 60 84 70" />
+        <path d="M116 74 H142" />
+        <circle cx="73" cy="94" r="7" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="7" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="93" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="93" r="3" fill="#4A4433" stroke="none" />
+        <path d="M70 128 Q100 146 130 124" />
+      `),
+    },
+    {
+      id: "worried",
+      label: "担忧的",
+      face: makeFace(`
+        <path d="M58 78 Q71 64 84 70" />
+        <path d="M142 78 Q129 64 116 70" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="76" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="130" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M76 136 Q100 124 124 136" />
+      `),
+    },
+    {
+      id: "lonely",
+      label: "孤独的",
+      face: makeFace(`
+        <path d="M58 78 Q71 66 84 72" />
+        <path d="M142 78 Q129 66 116 72" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M78 134 H122" />
+        <path d="M146 72 C146 66 154 62 158 68 C162 62 170 66 170 72 C170 80 158 88 158 88 C158 88 146 80 146 72 Z" fill="none" stroke="#4A4433" stroke-width="3" />
+        <path d="M158 66 L154 72 L160 76" fill="none" stroke="#4A4433" stroke-width="2" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "disappointed",
+      label: "失望的",
+      face: makeFace(`
+        <path d="M58 76 Q71 64 84 70" />
+        <path d="M142 76 Q129 64 116 70" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="97" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M72 140 Q100 116 128 140" />
+        <path d="M128 134 q10 2 14 8" fill="none" stroke="#4A4433" stroke-width="3" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "frustrated",
+      label: "受挫的",
+      face: makeFace(`
+        <path d="M58 72 L84 82" />
+        <path d="M142 72 L116 82" />
+        <path d="M64 96 Q73 88 82 96" />
+        <path d="M118 96 Q127 88 136 96" />
+        <rect x="76" y="122" width="48" height="15" rx="4" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <path d="M88 122 V137 M100 122 V137 M112 122 V137" stroke="#4A4433" stroke-width="2" />
+        <path d="M146 42 Q140 32 146 22" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <path d="M160 46 Q154 36 160 26" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "guilty",
+      label: "内疚的",
+      face: makeFace(`
+        <path d="M58 76 Q71 64 84 70" />
+        <path d="M142 76 Q129 64 116 70" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="70" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="124" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M78 132 Q100 126 122 132" />
+        <ellipse cx="54" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+        <ellipse cx="146" cy="118" rx="10" ry="6" fill="#E4BFA6" stroke="none" opacity="0.7" />
+      `),
+    },
+    {
+      id: "terrified",
+      label: "恐惧的",
+      face: makeFace(`
+        <path d="M56 64 Q70 50 84 64" />
+        <path d="M144 64 Q130 50 116 64" />
+        <circle cx="73" cy="92" r="11" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="92" r="11" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <ellipse cx="100" cy="136" rx="16" ry="22" fill="#4A4433" stroke="none" />
+        <path d="M86 124 Q100 120 114 124" fill="none" stroke="#FFFCF4" stroke-width="4" stroke-linecap="round" />
+        <path d="M70 16 V6 M100 12 V2 M130 16 V6" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "anxious",
+      label: "焦虑的",
+      face: makeFace(`
+        <path d="M58 76 Q71 62 84 72" />
+        <path d="M142 76 Q129 62 116 72" />
+        <circle cx="73" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="94" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="94" r="3" fill="#4A4433" stroke="none" />
+        <path d="M66 132 q8.5 -9 17 0 t17 0 t17 0 t17 0" />
+        <path d="M156 64 C150 74 150 80 156 83 C162 80 162 74 156 64 Z" fill="#D8D2BD" stroke="#4A4433" stroke-width="2.5" />
+        <path d="M44 64 C38 74 38 80 44 83 C50 80 50 74 44 64 Z" fill="#D8D2BD" stroke="#4A4433" stroke-width="2.5" />
+      `),
+    },
+    {
+      id: "confused",
+      label: "困惑的",
+      face: makeFace(`
+        <path d="M58 70 Q71 58 84 68" />
+        <path d="M116 76 L142 84" />
+        <circle cx="73" cy="94" r="7" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="91" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="97" r="3" fill="#4A4433" stroke="none" />
+        <path d="M70 132 q7 -7 14 0 t14 0 t14 0" />
+        <path d="M148 50 q10 -14 20 0 q0 10 -10 12 v6" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <circle cx="158" cy="76" r="2.5" fill="#4A4433" stroke="none" />
+      `),
+    },
+    {
+      id: "annoyed",
+      label: "烦躁的",
+      face: makeFace(`
+        <path d="M58 72 Q71 62 84 70" />
+        <path d="M116 74 L142 74" />
+        <path d="M64 92 Q73 98 82 92" />
+        <path d="M118 92 Q127 98 136 92" />
+        <circle cx="73" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M74 132 Q100 128 126 132" />
+        <path d="M150 44 Q144 34 150 24" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "furious",
+      label: "暴怒的",
+      face: makeFace(`
+        <path d="M56 68 L84 84" />
+        <path d="M144 68 L116 84" />
+        <circle cx="73" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="94" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="94" r="3" fill="#4A4433" stroke="none" />
+        <rect x="72" y="120" width="56" height="18" rx="4" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <path d="M86 120 V138 M100 120 V138 M114 120 V138" stroke="#4A4433" stroke-width="2" />
+        <ellipse cx="54" cy="118" rx="12" ry="8" fill="#E85D5D" stroke="none" opacity="0.55" />
+        <ellipse cx="146" cy="118" rx="12" ry="8" fill="#E85D5D" stroke="none" opacity="0.55" />
+        <path d="M62 26 Q56 16 62 6" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <path d="M100 22 V6" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <path d="M138 26 Q144 16 138 6" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "helpless",
+      label: "无助的",
+      face: makeFace(`
+        <path d="M58 78 Q71 64 84 70" />
+        <path d="M142 78 Q129 64 116 70" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="96" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M76 136 Q100 126 124 136" />
+        <path d="M156 64 C150 74 150 80 156 83 C162 80 162 74 156 64 Z" fill="#D8D2BD" stroke="#4A4433" stroke-width="2.5" />
+        <path d="M40 150 Q48 142 56 150" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+        <path d="M144 150 Q152 142 160 150" fill="none" stroke="#4A4433" stroke-width="4" stroke-linecap="round" />
+      `),
+    },
+    {
+      id: "curious",
+      label: "好奇的",
+      face: makeFace(`
+        <path d="M58 70 Q71 58 84 68" />
+        <path d="M116 74 Q129 70 142 74" />
+        <circle cx="73" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="77" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <circle cx="131" cy="92" r="3" fill="#4A4433" stroke="none" />
+        <ellipse cx="100" cy="132" rx="7" ry="9" fill="#4A4433" stroke="none" />
+        <path d="M154 54 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 Z" fill="#F2D77C" stroke="none" />
+      `),
+    },
+    {
+      id: "thoughtful",
+      label: "若有所思的",
+      face: makeFace(`
+        <path d="M58 72 Q71 60 84 68" />
+        <path d="M116 74 H142" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="73" cy="89" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="127" cy="89" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M78 130 H122" />
+        <circle cx="150" cy="58" r="4" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="162" cy="48" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="176" cy="36" r="8" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+      `),
+    },
+    {
+      id: "hesitant",
+      label: "犹豫的",
+      face: makeFace(`
+        <path d="M58 74 Q71 62 84 70" />
+        <path d="M116 74 Q129 72 142 76" />
+        <circle cx="73" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="127" cy="94" r="6" fill="#FFFCF4" stroke="#4A4433" stroke-width="3" />
+        <circle cx="70" cy="95" r="2.5" fill="#4A4433" stroke="none" />
+        <circle cx="124" cy="95" r="2.5" fill="#4A4433" stroke="none" />
+        <path d="M72 132 q7 -6 14 0 t14 0 t14 0" />
+        <path d="M156 64 C150 74 150 80 156 83 C162 80 162 74 156 64 Z" fill="#D8D2BD" stroke="#4A4433" stroke-width="2.5" />
+      `),
+    },
   ];
 
   const COGNITIVE_COLORS = [
