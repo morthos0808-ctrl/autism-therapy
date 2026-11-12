@@ -82,16 +82,16 @@
       },
       colors: ["blue", "green", "yellow"],
       render: (hex) => `
-        <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="4" />
+        <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="2.4" />
         <path d="M46 128 q13.5 -9 27 0 t27 0 t27 0 t27 0" fill="none" stroke="#DDEEF5" stroke-width="6" stroke-linecap="round" />
-        <rect x="91.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
-        <rect x="104.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <rect x="91.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="2.1" />
+        <rect x="104.5" y="52" width="9" height="46" rx="4.5" fill="${hex}" stroke="${STROKE}" stroke-width="2.1" />
         <path d="M88 54 v64 M97 54 v70 M106 54 v64" fill="none" stroke="#DDEEF5" stroke-width="6" stroke-linecap="round" />
-        <circle cx="70" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="70" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="2.1" />
         <circle cx="70" cy="84" r="4.5" fill="#FFFCF6" />
-        <circle cx="130" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="3.5" />
+        <circle cx="130" cy="84" r="12" fill="${hex}" stroke="${STROKE}" stroke-width="2.1" />
         <circle cx="130" cy="84" r="4.5" fill="#FFFCF6" />
-        <rect x="66" y="20" width="46" height="42" rx="20" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="66" y="20" width="46" height="42" rx="20" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -104,13 +104,13 @@
       },
       colors: ["red", "blue", "green"],
       render: (hex) => `
-        <rect x="102" y="176" width="76" height="16" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="124" y="84" width="36" height="94" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M142 88 V52 Q142 30 120 30 H84 Q64 30 64 52 V66" fill="none" stroke="${STROKE}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+        <rect x="102" y="176" width="76" height="16" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="124" y="84" width="36" height="94" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <path d="M142 88 V52 Q142 30 120 30 H84 Q64 30 64 52 V66" fill="none" stroke="${STROKE}" stroke-width="14.4" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M142 88 V52 Q142 30 120 30 H84 Q64 30 64 52 V66" fill="none" stroke="${hex}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
-        <rect x="54" y="64" width="20" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="92" y="104" width="40" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <circle cx="92" cy="111" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="54" y="64" width="20" height="12" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="92" y="104" width="40" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <circle cx="92" cy="111" r="11" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
         <path d="M64 84 v8" stroke="#67B7E8" stroke-width="5" stroke-linecap="round" />
       `,
     },
@@ -119,9 +119,9 @@
       name: "洗手液",
       colors: ["red", "green", "purple"],
       render: (hex) => `
-        <rect x="70" y="84" width="60" height="76" rx="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="88" y="64" width="24" height="26" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <path d="M112 68 h24 v12 h-20" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <rect x="70" y="84" width="60" height="76" rx="16" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="88" y="64" width="24" height="26" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <path d="M112 68 h24 v12 h-20" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" stroke-linejoin="round" />
         <path d="M84 108 h32" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="5" stroke-linecap="round" />
       `,
     },
@@ -130,7 +130,7 @@
       name: "香皂",
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
-        <rect x="48" y="78" width="104" height="60" rx="30" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="48" y="78" width="104" height="60" rx="30" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
         <path d="M78 96 q22 -8 44 0" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linecap="round" />
       `,
     },
@@ -139,10 +139,10 @@
       name: "镜子",
       colors: ["blue", "green", "yellow"],
       render: (hex) => `
-        <ellipse cx="100" cy="90" rx="46" ry="54" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <ellipse cx="100" cy="90" rx="34" ry="42" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <ellipse cx="100" cy="90" rx="46" ry="54" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <ellipse cx="100" cy="90" rx="34" ry="42" fill="#DDEEF5" stroke="${STROKE}" stroke-width="1.8" />
         <path d="M84 76 q10 -10 22 -6" fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round" />
-        <path d="M100 144 v14 M84 160 h32" fill="none" stroke="${STROKE}" stroke-width="6" stroke-linecap="round" />
+        <path d="M100 144 v14 M84 160 h32" fill="none" stroke="${STROKE}" stroke-width="3.6" stroke-linecap="round" />
       `,
     },
     {
@@ -157,8 +157,8 @@
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
         <g transform="rotate(-12 100 100)">
-          <rect x="34" y="108" width="104" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-          <rect x="130" y="92" width="44" height="34" rx="14" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+          <rect x="34" y="108" width="104" height="18" rx="9" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+          <rect x="130" y="92" width="44" height="34" rx="14" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
           <path d="M140 100 v18 M148.5 98 v20 M157 98 v20 M165.5 100 v18" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round" />
           <path d="M48 117 h18 M72 117 h18" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" />
         </g>
@@ -169,8 +169,8 @@
       name: "牙杯",
       colors: ["red", "yellow", "purple"],
       render: (hex) => `
-        <path d="M64 78 h72 l-9 72 a8 8 0 0 1 -8 7 h-38 a8 8 0 0 1 -8 -7 z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
-        <ellipse cx="100" cy="78" rx="36" ry="9" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <path d="M64 78 h72 l-9 72 a8 8 0 0 1 -8 7 h-38 a8 8 0 0 1 -8 -7 z" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" stroke-linejoin="round" />
+        <ellipse cx="100" cy="78" rx="36" ry="9" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -178,12 +178,12 @@
       name: "毛巾",
       colors: ["red", "blue", "green", "orange"],
       render: (hex) => `
-        <rect x="22" y="10" width="136" height="186" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="158" y="10" width="28" height="174" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="22" y="10" width="136" height="186" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="158" y="10" width="28" height="174" rx="12" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
         <rect x="24" y="140" width="132" height="8" fill="#FFFFFF" fill-opacity="0.55" />
         <rect x="24" y="162" width="132" height="10" fill="#FFFFFF" fill-opacity="0.38" />
         <path d="M170 26 v146" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" />
-        <rect x="4" y="8" width="192" height="14" rx="7" fill="#C9BFA5" stroke="${STROKE}" stroke-width="4" />
+        <rect x="4" y="8" width="192" height="14" rx="7" fill="#C9BFA5" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -191,18 +191,18 @@
       name: "牙膏",
       colors: ["blue", "green", "orange"],
       render: (hex) => `
-        <rect x="47" y="4" width="106" height="23" rx="6" fill="#FFFCF4" stroke="${STROKE}" stroke-width="4" />
+        <rect x="47" y="4" width="106" height="23" rx="6" fill="#FFFCF4" stroke="${STROKE}" stroke-width="2.4" />
         <rect x="51" y="10" width="98" height="7" rx="3.5" fill="${hex}" />
-        <path d="M49 27 H151 L140 150 H60 Z" fill="${hex}" stroke="${STROKE}" stroke-width="4" stroke-linejoin="round" />
+        <path d="M49 27 H151 L140 150 H60 Z" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" stroke-linejoin="round" />
         <path d="M55 31 H68 L72 146 H61 Z" fill="${STROKE}" fill-opacity="0.1" />
-        <path d="M83.6 46.9 Q95.8 44.8 99.2 51.6 L107 46.9 L113.3 46.9 L123.4 53.9 Q126.6 57.8 125 66.4 L117.2 77.3 L117.2 83.6 L120.3 89.8 L120.3 97.7 Q118.4 105 107 103.1 L99.2 93.8 L96.9 101.6 Q94.2 103.9 86.7 103.1 L81.3 97.7 L81.3 83.6 L71.9 69.5 L71.9 58.6 L80.5 48.4 Z" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3.5" stroke-linejoin="round" />
-        <path d="M109 82 Q103 88 104 96 Q105 101 111 101" fill="none" stroke="${STROKE}" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round" />
+        <path d="M83.6 46.9 Q95.8 44.8 99.2 51.6 L107 46.9 L113.3 46.9 L123.4 53.9 Q126.6 57.8 125 66.4 L117.2 77.3 L117.2 83.6 L120.3 89.8 L120.3 97.7 Q118.4 105 107 103.1 L99.2 93.8 L96.9 101.6 Q94.2 103.9 86.7 103.1 L81.3 97.7 L81.3 83.6 L71.9 69.5 L71.9 58.6 L80.5 48.4 Z" fill="#FFFCF4" stroke="${STROKE}" stroke-width="2.1" stroke-linejoin="round" />
+        <path d="M109 82 Q103 88 104 96 Q105 101 111 101" fill="none" stroke="${STROKE}" stroke-opacity="0.35" stroke-width="1.8" stroke-linecap="round" />
         <rect x="72" y="116" width="56" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.8" />
         <rect x="76" y="128" width="48" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.65" />
         <rect x="60" y="150" width="80" height="9" rx="4" fill="${STROKE}" />
-        <rect x="66" y="159" width="68" height="13" rx="4" fill="#FFFCF4" stroke="${STROKE}" stroke-width="3.5" />
+        <rect x="66" y="159" width="68" height="13" rx="4" fill="#FFFCF4" stroke="${STROKE}" stroke-width="2.1" />
         <rect x="67" y="172" width="66" height="6" rx="3" fill="${STROKE}" />
-        <rect x="72" y="178" width="56" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="72" y="178" width="56" height="14" rx="7" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -210,12 +210,12 @@
       name: "床",
       colors: ["red", "blue", "green"],
       render: (hex) => `
-        <rect x="38" y="80" width="18" height="66" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="40" y="104" width="120" height="40" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="60" y="90" width="36" height="18" rx="6" fill="#FFFFFF" stroke="${STROKE}" stroke-width="4" />
-        <path d="M96 104 v40" stroke="${STROKE}" stroke-width="3" />
-        <rect x="46" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="142" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="38" y="80" width="18" height="66" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="40" y="104" width="120" height="40" rx="8" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="60" y="90" width="36" height="18" rx="6" fill="#FFFFFF" stroke="${STROKE}" stroke-width="2.4" />
+        <path d="M96 104 v40" stroke="${STROKE}" stroke-width="1.8" />
+        <rect x="46" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="142" y="144" width="12" height="16" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -223,10 +223,10 @@
       name: "桌子",
       colors: ["yellow", "green", "orange"],
       render: (hex) => `
-        <rect x="40" y="86" width="120" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="52" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="136" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="96" y="102" width="12" height="50" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="40" y="86" width="120" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="52" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="136" y="102" width="12" height="58" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="96" y="102" width="12" height="50" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -234,10 +234,10 @@
       name: "椅子",
       colors: ["blue", "yellow", "green"],
       render: (hex) => `
-        <rect x="64" y="44" width="18" height="78" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="64" y="104" width="70" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="68" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="120" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="64" y="44" width="18" height="78" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="64" y="104" width="70" height="16" rx="5" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="68" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="120" y="120" width="13" height="42" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -245,15 +245,15 @@
       name: "电视",
       colors: ["red", "blue", "purple"],
       render: (hex) => `
-        <path d="M100 54 L76 26 M100 54 L124 26" fill="none" stroke="${STROKE}" stroke-width="4" stroke-linecap="round" />
+        <path d="M100 54 L76 26 M100 54 L124 26" fill="none" stroke="${STROKE}" stroke-width="2.4" stroke-linecap="round" />
         <circle cx="76" cy="26" r="4" fill="${STROKE}" />
         <circle cx="124" cy="26" r="4" fill="${STROKE}" />
-        <rect x="36" y="54" width="128" height="86" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="46" y="64" width="108" height="56" rx="4" fill="#DDEEF5" stroke="${STROKE}" stroke-width="3" />
+        <rect x="36" y="54" width="128" height="86" rx="10" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="46" y="64" width="108" height="56" rx="4" fill="#DDEEF5" stroke="${STROKE}" stroke-width="1.8" />
         <circle cx="54" cy="130" r="3" fill="${STROKE}" />
         <circle cx="66" cy="130" r="3" fill="${STROKE}" />
-        <rect x="84" y="140" width="32" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="62" y="150" width="76" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
+        <rect x="84" y="140" width="32" height="10" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="62" y="150" width="76" height="8" rx="4" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
       `,
     },
     {
@@ -261,9 +261,9 @@
       name: "门",
       colors: ["red", "blue", "green", "orange"],
       render: (hex) => `
-        <rect x="58" y="42" width="84" height="118" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
-        <rect x="70" y="56" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="3" />
-        <rect x="70" y="106" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="3" />
+        <rect x="58" y="42" width="84" height="118" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="2.4" />
+        <rect x="70" y="56" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="1.8" />
+        <rect x="70" y="106" width="60" height="40" rx="4" fill="none" stroke="${STROKE}" stroke-width="1.8" />
         <circle cx="128" cy="104" r="5" fill="${STROKE}" />
       `,
     },
@@ -279,7 +279,7 @@
       const fallbackId = item.colors && item.colors[0];
       const src = item.images[colorId] || item.images[fallbackId];
       if (src) {
-        return `<img src="${src}" alt="" class="object-image" />`;
+        return `<img src="${src}" alt="" class="object-image" loading="eager" decoding="async" />`;
       }
     }
 
@@ -291,6 +291,32 @@
       </svg>
     `;
   };
+
+  const cognitiveImageSources = Array.from(
+    new Set(
+      COGNITIVE_ITEMS.flatMap((item) => (item.images ? Object.values(item.images) : [])),
+    ),
+  );
+  const preloadedCognitiveImages = new Map();
+
+  function preloadCognitiveImages() {
+    cognitiveImageSources.forEach((src) => {
+      if (preloadedCognitiveImages.has(src)) {
+        return;
+      }
+
+      const image = new Image();
+      image.decoding = "async";
+      image.src = src;
+      preloadedCognitiveImages.set(src, image);
+
+      if (typeof image.decode === "function") {
+        image.decode().catch(() => {});
+      }
+    });
+  }
+
+  preloadCognitiveImages();
 
   const els = {
     aboutScreen: document.getElementById("screen-about"),
