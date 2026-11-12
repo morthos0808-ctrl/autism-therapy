@@ -75,6 +75,11 @@
     {
       id: "wash-basin",
       name: "洗手台",
+      images: {
+        blue: "assets/wash-basin-blue.png",
+        green: "assets/wash-basin-green.png",
+        yellow: "assets/wash-basin-yellow.png",
+      },
       colors: ["blue", "green", "yellow"],
       render: (hex) => `
         <path d="M100 92 C147.5 92 186 110.8 186 134 C186 157.2 147.5 176 100 176 C52.5 176 14 157.2 14 134 C14 110.8 52.5 92 100 92 Z M100 102 C142 102 176 116.3 176 134 C176 151.7 142 166 100 166 C58 166 24 151.7 24 134 C24 116.3 58 102 100 102 Z" fill="${hex}" fill-rule="evenodd" stroke="${STROKE}" stroke-width="4" />
@@ -92,6 +97,11 @@
     {
       id: "faucet",
       name: "水龙头",
+      images: {
+        red: "assets/faucet-red.png",
+        blue: "assets/faucet-blue.png",
+        green: "assets/faucet-green.png",
+      },
       colors: ["red", "blue", "green"],
       render: (hex) => `
         <rect x="102" y="176" width="76" height="16" rx="6" fill="${hex}" stroke="${STROKE}" stroke-width="4" />
@@ -138,6 +148,12 @@
     {
       id: "toothbrush",
       name: "牙刷",
+      images: {
+        red: "assets/toothbrush-red.png",
+        blue: "assets/toothbrush-blue.png",
+        yellow: "assets/toothbrush-yellow.png",
+        green: "assets/toothbrush-green.png",
+      },
       colors: ["red", "blue", "yellow", "green"],
       render: (hex) => `
         <g transform="rotate(-12 100 100)">
@@ -254,11 +270,20 @@
   ];
 
   const makeObject = (itemId, colorId) => {
-    const color = COGNITIVE_COLORS.find((c) => c.id === colorId) || COGNITIVE_COLORS[0];
     const item = COGNITIVE_ITEMS.find((i) => i.id === itemId);
     if (!item) {
       return "";
     }
+
+    if (item.images) {
+      const fallbackId = item.colors && item.colors[0];
+      const src = item.images[colorId] || item.images[fallbackId];
+      if (src) {
+        return `<img src="${src}" alt="" class="object-image" />`;
+      }
+    }
+
+    const color = COGNITIVE_COLORS.find((c) => c.id === colorId) || COGNITIVE_COLORS[0];
 
     return `
       <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
