@@ -268,9 +268,12 @@
   };
 
   const els = {
+    aboutScreen: document.getElementById("screen-about"),
     startScreen: document.getElementById("screen-start"),
     menuScreen: document.getElementById("screen-menu"),
     practiceScreen: document.getElementById("screen-practice"),
+    aboutStartBtn: document.getElementById("about-start-btn"),
+    startAboutBtn: document.getElementById("start-about-btn"),
     startBtn: document.getElementById("start-btn"),
     menuBackBtn: document.getElementById("menu-back-btn"),
     practiceEntryBtn: document.getElementById("practice-entry-btn"),
@@ -497,10 +500,20 @@
   }
 
   function showScreen(name) {
+    els.aboutScreen.hidden = name !== "about";
     els.startScreen.hidden = name !== "start";
     els.menuScreen.hidden = name !== "menu";
     els.practiceScreen.hidden = name !== "practice";
     window.scrollTo(0, 0);
+  }
+
+  function openAbout() {
+    showScreen("about");
+  }
+
+  function enterFromAbout() {
+    showScreen("start");
+    els.startBtn.focus({ preventScroll: true });
   }
 
   function openMenu() {
@@ -531,6 +544,7 @@
 
     lastFocused = document.activeElement;
     els.overlay.hidden = false;
+    els.aboutScreen.inert = true;
     els.startScreen.inert = true;
     els.menuScreen.inert = true;
     els.practiceScreen.inert = true;
@@ -545,6 +559,7 @@
     }
 
     els.overlay.hidden = true;
+    els.aboutScreen.inert = false;
     els.startScreen.inert = false;
     els.menuScreen.inert = false;
     els.practiceScreen.inert = false;
@@ -605,6 +620,8 @@
     els.startBtn.focus({ preventScroll: true });
   }
 
+  els.aboutStartBtn.addEventListener("click", enterFromAbout);
+  els.startAboutBtn.addEventListener("click", openAbout);
   els.startBtn.addEventListener("click", openMenu);
   els.menuBackBtn.addEventListener("click", goHome);
   els.practiceEntryBtn.addEventListener("click", () => startSession("emotion"));

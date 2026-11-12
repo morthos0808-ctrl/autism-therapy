@@ -9,7 +9,80 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section id="screen-start" class="screen screen--start" aria-labelledby="start-title">
+    <section id="screen-about" class="screen screen--about" aria-labelledby="about-title">
+      <div class="about-inner">
+        <header class="about-hero">
+          <p class="about-eyebrow">关于我们</p>
+          <h1 id="about-title" class="about-title">Autism-Therapy</h1>
+          <p class="about-lead">面向自闭症儿童的免费线上情绪干预练习工具</p>
+        </header>
+
+        <section class="about-section" aria-labelledby="about-intro-title">
+          <h2 id="about-intro-title">项目简介</h2>
+          <p>本网站是一款轻量化数字干预工具，专注帮助自闭症儿童认识、辨别各类人类情绪。平台核心功能为「情绪练习」互动小游戏：展示不同面部表情图片，引导孩子判断对应的情绪类别，以此锻炼情绪识别能力。</p>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-value-title">
+          <h2 id="about-value-title">项目价值</h2>
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>解决的核心痛点</h3>
+              <p>不少自闭症儿童存在面部情绪识别困难，很难读懂他人表情与情绪信号，会直接影响日常社交相处。现实中专业康复治疗师资源紧缺，很多家庭难以获得充足、常态化的训练机会。本网站支持孩子在家独立开展情绪训练，弥补线下康复资源供给不足的缺口。</p>
+            </article>
+            <article class="about-card">
+              <h3>目标用户</h3>
+              <p>自闭症儿童、儿童家长、特殊教育康复治疗师。</p>
+            </article>
+            <article class="about-card">
+              <h3>项目独特优势</h3>
+              <p>完全免费，浏览器直接打开即可使用，无需下载安装任何软件；操作门槛低，适配儿童自主反复练习；用低成本数字化方式，补齐家庭场景下的早期干预训练。</p>
+            </article>
+            <article class="about-card">
+              <h3>理念契合</h3>
+              <p>践行可及、循证、以儿童为中心的理念，为自闭症群体提供普惠的低成本早期干预训练资源。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-mv-title">
+          <h2 id="about-mv-title">使命与愿景</h2>
+          <div class="about-grid">
+            <article class="about-card about-card--accent">
+              <h3>使命（Mission）</h3>
+              <p>为自闭症儿童提供简单易用、循证科学的数字化干预工具，缓解专业治疗师资源短缺带来的现实困境，支持儿童足不出户就可以自主开展康复训练。</p>
+            </article>
+            <article class="about-card about-card--accent">
+              <h3>愿景（Vision）</h3>
+              <p>构建包容友好的社会环境：让每一位自闭症儿童，无论身处何地、资源条件是否有限，都能够获得及时、适配自身情况的早期干预支持。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-values-title">
+          <h2 id="about-values-title">核心价值观</h2>
+          <ol class="about-values">
+            <li><strong>循证为本</strong><span>遵循科学干预理念开展训练设计</span></li>
+            <li><strong>便捷可及</strong><span>降低使用门槛，让更多家庭可以轻松使用</span></li>
+            <li><strong>以儿童为中心</strong><span>贴合儿童认知特点设计功能</span></li>
+            <li><strong>赋能支持</strong><span>赋能孩子与家庭，在家自主开展练习</span></li>
+            <li><strong>包容普惠</strong><span>面向所有有需要的自闭症儿童开放</span></li>
+          </ol>
+        </section>
+
+        <section class="about-section" aria-labelledby="about-links-title">
+          <h2 id="about-links-title">项目介绍</h2>
+          <p>网站链接：<a href="https://morthos0808-ctrl.github.io/autism-therapy/">https://morthos0808-ctrl.github.io/autism-therapy/</a></p>
+          <p class="about-note">本站仍在持续完善中，欢迎提出建议与反馈。</p>
+        </section>
+      </div>
+
+      <div class="about-cta-bar">
+        <button id="about-start-btn" class="about-primary-btn" type="button">进入练习</button>
+      </div>
+    </section>
+
+    <section id="screen-start" class="screen screen--start" aria-labelledby="start-title" hidden>
+      <button id="start-about-btn" class="corner-link" type="button">关于我们</button>
       <div class="start-inner">
         <div class="start-content">
           <h1 id="start-title" class="start-title">Autism-Therapy</h1>
